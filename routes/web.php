@@ -11,13 +11,14 @@
 |
 */
 
+// function
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::prefix('admin')->group(function(){
 	Route::get('/', function(){
-		return view('admin.main');
+		return view('admin.pages.dashboard');
 	})->name('admin.home');
 });
 
