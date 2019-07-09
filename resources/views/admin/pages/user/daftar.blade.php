@@ -42,7 +42,7 @@
 
 <div class="row">
 <div class="col-md-6 mb-3">
-		<a href="{{ route('admin.user.add') }}" class="btn btn-primary">[+] Tambah</a>
+		<a href="{{ route('admin.user.add') }}" class="btn btn-dark bg-info">[+] Tambah</a>
 	</div>
 
 	<div class="col-md-6 mb-3">
@@ -53,7 +53,7 @@
 				class="form-control">
 				<div class="input-group-append">
 					<button type="submit"
-					class="btn btn-primary">
+					class="btn btn-dark bg-info">
 						Cari !
 					</button>
 				</div>
