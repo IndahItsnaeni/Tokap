@@ -54,6 +54,10 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']], function(){
 		Route::delete('/','KategoriController@delete')->middleware('akses.admin');
 	});
 
+		/* Produk */
+		Route::group(['prefix'=>'produk','middleware'=>'akses.admin'], function(){
+			Route::get('/','ProdukController@daftar')->name('admin.produk');
+		});
 });
 
 
